@@ -1,0 +1,108 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1655290138
+<< obsli1 >>
+rect 1104 2159 119019 117521
+<< obsm1 >>
+rect 14 2128 119031 117552
+<< metal2 >>
+rect 29642 119200 29698 120000
+rect 65706 119200 65762 120000
+rect 101770 119200 101826 120000
+rect 18 0 74 800
+rect 36082 0 36138 800
+rect 72146 0 72202 800
+rect 108210 0 108266 800
+<< obsm2 >>
+rect 20 119144 29586 119200
+rect 29754 119144 65650 119200
+rect 65818 119144 101714 119200
+rect 101882 119144 117742 119200
+rect 20 856 117742 119144
+rect 130 800 36026 856
+rect 36194 800 72090 856
+rect 72258 800 108154 856
+rect 108322 800 117742 856
+<< metal3 >>
+rect 0 113568 800 113688
+rect 119200 101328 120000 101448
+rect 0 75488 800 75608
+rect 119200 63248 120000 63368
+rect 0 37408 800 37528
+rect 119200 25168 120000 25288
+<< obsm3 >>
+rect 800 113768 119200 117537
+rect 880 113488 119200 113768
+rect 800 101528 119200 113488
+rect 800 101248 119120 101528
+rect 800 75688 119200 101248
+rect 880 75408 119200 75688
+rect 800 63448 119200 75408
+rect 800 63168 119120 63448
+rect 800 37608 119200 63168
+rect 880 37328 119200 37608
+rect 800 25368 119200 37328
+rect 800 25088 119120 25368
+rect 800 2143 119200 25088
+<< metal4 >>
+rect 4208 2128 4528 117552
+rect 19568 2128 19888 117552
+rect 34928 2128 35248 117552
+rect 50288 2128 50608 117552
+rect 65648 2128 65968 117552
+rect 81008 2128 81328 117552
+rect 96368 2128 96688 117552
+rect 111728 2128 112048 117552
+<< labels >>
+rlabel metal3 s 119200 63248 120000 63368 6 clk
+port 1 nsew signal input
+rlabel metal2 s 72146 0 72202 800 6 count[0]
+port 2 nsew signal output
+rlabel metal2 s 101770 119200 101826 120000 6 count[1]
+port 3 nsew signal output
+rlabel metal3 s 0 75488 800 75608 6 count[2]
+port 4 nsew signal output
+rlabel metal2 s 18 0 74 800 6 count[3]
+port 5 nsew signal output
+rlabel metal2 s 108210 0 108266 800 6 data[0]
+port 6 nsew signal input
+rlabel metal3 s 0 37408 800 37528 6 data[1]
+port 7 nsew signal input
+rlabel metal2 s 65706 119200 65762 120000 6 data[2]
+port 8 nsew signal input
+rlabel metal3 s 119200 101328 120000 101448 6 data[3]
+port 9 nsew signal input
+rlabel metal2 s 36082 0 36138 800 6 dn
+port 10 nsew signal input
+rlabel metal3 s 0 113568 800 113688 6 en
+port 11 nsew signal input
+rlabel metal2 s 29642 119200 29698 120000 6 load
+port 12 nsew signal input
+rlabel metal3 s 119200 25168 120000 25288 6 rst_n
+port 13 nsew signal input
+rlabel metal4 s 4208 2128 4528 117552 6 vccd1
+port 14 nsew power input
+rlabel metal4 s 34928 2128 35248 117552 6 vccd1
+port 14 nsew power input
+rlabel metal4 s 65648 2128 65968 117552 6 vccd1
+port 14 nsew power input
+rlabel metal4 s 96368 2128 96688 117552 6 vccd1
+port 14 nsew power input
+rlabel metal4 s 19568 2128 19888 117552 6 vssd1
+port 15 nsew ground input
+rlabel metal4 s 50288 2128 50608 117552 6 vssd1
+port 15 nsew ground input
+rlabel metal4 s 81008 2128 81328 117552 6 vssd1
+port 15 nsew ground input
+rlabel metal4 s 111728 2128 112048 117552 6 vssd1
+port 15 nsew ground input
+<< properties >>
+string LEFclass BLOCK
+string FIXED_BBOX 0 0 120000 120000
+string LEFview TRUE
+string GDS_FILE /home/shahid/caravel_user_project/openlane/counter/runs/counter/results/magic/counter.gds
+string GDS_END 3801228
+string GDS_START 169470
+<< end >>
+

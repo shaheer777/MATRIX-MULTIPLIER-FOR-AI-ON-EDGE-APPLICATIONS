@@ -1,2 +1,11 @@
-# MATRIX-MULTIPLIER-FOR-AI-ON-EDGE-APPLICATIONS
-This is github repository for MATRIX MULTIPLIER FOR AI ON EDGE APPLICATIONS
+
+
+## Please fill in your project documentation in this README.md file 
+RuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhmaRuhma
+AliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAliAli
+This project is basically the matrix multiplier.
+We are implementing the multiplication by using the matrix multiplier.
+Matrix A is 2*2
+Matrix B is 2*2
+All detail is available on github.
+
