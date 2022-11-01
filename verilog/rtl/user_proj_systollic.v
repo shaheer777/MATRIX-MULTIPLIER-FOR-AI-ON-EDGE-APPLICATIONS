@@ -137,8 +137,12 @@ wire clk;
                                 32'hDEADBEEF;
 
     assign      wbs_ack_o   =   (we_A_reg || we_B_reg || (re_C1_reg && done) || (re_C2_reg && done)|| (re_C3_reg && done)|| (re_C4_reg && done))   ?   1'b1    :   1'b0;
+   
+   // CHecking chip is properly working//
+   // Inverter// 
+    assign io_out[1]=~io_in[0];
     
-
+   
     assign irq = 3'b000;	
     systolic_array sys(
         .clk(clk),
@@ -155,6 +159,8 @@ wire clk;
         .c12(C12),
         .c21(C21),
         .c22(C22),
+        .start(io_out[2]),
+        .done(io_out[0])
     );
 
 endmodule

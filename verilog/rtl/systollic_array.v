@@ -1,6 +1,6 @@
 //same code as systolic array but with rst and removal of race conditions
 
-module systolic_array( a11,a12,a21,a22, b11, b12, b21, b22, clk, c11, c12, c21, c22,rst);
+module systolic_array( start,a11,a12,a21,a22, b11, b12, b21, b22, clk, c11, c12, c21, c22,rst,done);
 //matrix "a" inputs
 input signed [7:0] a11;
 input signed [7:0] a12;
@@ -15,7 +15,8 @@ input signed [7:0] b22;
 
 //clk input
 input clk;
-
+output start;
+output done;
 //rst input
 input rst;
 
@@ -24,6 +25,7 @@ output reg signed [16:0] c11;
 output reg signed [16:0] c12;
 output reg signed [16:0] c21;
 output reg signed [16:0] c22;
+
 
 //counter register to know "T"
 reg [2:0] counter;
@@ -108,6 +110,7 @@ end
 
 3'b110: begin
 c22 = c7 + c8;
+Done=1;
 end
 
 endcase
@@ -122,7 +125,10 @@ if(rst)
 counter <= 0;
 
 else if (counter <= 6 )
+begin
 counter <= counter + 1;
+start=1;
+end
 
 else
 counter <= counter;
